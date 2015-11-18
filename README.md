@@ -9,7 +9,7 @@ Add this line to your application's Gemfile:
 ```ruby
 gem 'random_cases'
 or
-gem 'random_cases', '~> 0.1.0'
+gem 'random_cases', '~> 0.2.0'
 ```
 
 And then execute:
