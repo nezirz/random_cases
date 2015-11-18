@@ -1,8 +1,6 @@
 # RandomCases
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/random_cases`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Simple implementation of String method for randomizing characters in string or text
 
 ## Installation
 
@@ -10,6 +8,8 @@ Add this line to your application's Gemfile:
 
 ```ruby
 gem 'random_cases'
+or
+gem 'random_cases', '~> 0.1.0'
 ```
 
 And then execute:
@@ -22,7 +22,32 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+<h1>Ruby Random Cases</h1>
+<br/>
+<b>Regular:</b> Some simple text
+
+<b>Converted:</b> soMe SimpLE tExT
+<h2>Usage</h2>
+Calling <b>.random_cases</b> string method on any string
+"Some simple text".<b>random_cases</b>
+
+class HomeController < ApplicationController<br/>
+  def index<br/>
+  	@cool= "Some simple text"<br/>
+  	@random = "Some simple text".<b>random_cases</b><br/>
+  end<br/>
+end<br/>
+<br/>
+
+<h2>Method implementation</h2>
+class String
+	def random_cases
+		self.gsub(/./){
+		|c| rand(2)>0 ? c : c.swapcase 
+		}
+	end
+end
+
 
 ## Development
 
