@@ -40,14 +40,16 @@ end<br/>
 <br/>
 
 <h2>Method implementation</h2>
-class String<br/>
 
-	def random_cases<br/>
+class String
 
-		self.gsub(/./){	|c| rand(2)>0 ? c : c.swapcase 	} <br/>
-	end <br/>
+	def random_cases
 
-end<br/>
+		self.gsub(/./){	|c| rand(2)>0 ? c : c.swapcase 	} 
+		
+	end 
+
+end
 
 ## Development
 
